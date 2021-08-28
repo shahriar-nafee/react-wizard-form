@@ -35,6 +35,9 @@ function Form2() {
       <div className="container container-fluid">
         <div className="row justify-content-center mt-5">
           <div className="col-md-4 col-10 bg-light p-4 shadow-lg mt-5">
+            <div className="text-center">
+              <h4>Please provide your account details</h4>
+            </div>
             {error && (
               <div class="alert alert-danger" role="alert">
                 {error}

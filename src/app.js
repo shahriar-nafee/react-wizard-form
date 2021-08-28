@@ -12,10 +12,10 @@ export default function app() {
     <Provider store={store}>
       <Router>
         <Switch>
-          <Route exact path="/" component={Form1} />
+          <Route exact path="/" component={Users} />
+          <Route exact path="/step1" component={Form1} />
           <Route path="/step2" component={Form2} />
           <Route path="/step3" component={Form3} />
-          <Route path="/users" component={Users} />
         </Switch>
       </Router>
     </Provider>

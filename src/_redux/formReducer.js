@@ -1,6 +1,26 @@
-import { HANDLE_FORM1_INPUT, HANDLE_FORM2_INPUT } from "./types";
+import {
+  HANDLE_FORM1_INPUT,
+  HANDLE_FORM2_INPUT,
+  FORM_SUBMIT,
+  EMPTY_FORM,
+} from "./types";
 
 const initialState = {
+  userData: [
+    {
+      userName: "asif",
+      email: "asif@gmail.com",
+    },
+    {
+      userName: "sakib",
+      email: "sakib@gmail.com",
+    },
+    {
+      userName: "rifat",
+      email: "rifat@hotmail.com",
+    },
+  ],
+
   form1: {
     firstName: "",
     lastName: "",
@@ -8,6 +28,7 @@ const initialState = {
     country: "",
     checkbox: "",
   },
+
   form2: {
     userName: "",
     password: "",
@@ -29,6 +50,19 @@ export default function (state = initialState, action) {
       return {
         ...state,
         form2,
+      };
+
+    case FORM_SUBMIT:
+      return {
+        ...state,
+        userData: [...state.userData, action.payload],
+      };
+
+    case EMPTY_FORM:
+      return {
+        ...state,
+        form1: initialState.form1,
+        form2: initialState.form2,
       };
 
     default:

@@ -1,2 +1,4 @@
 export const HANDLE_FORM1_INPUT = "HANDLE_FORM1_INPUT";
 export const HANDLE_FORM2_INPUT = "HANDLE_FORM2_INPUT";
+export const FORM_SUBMIT = "FORM_SUBMIT";
+export const EMPTY_FORM = "EMPTY_FORM";
