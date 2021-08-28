@@ -14,7 +14,6 @@ function Users() {
           </div>
           <div className="text-end">
             <Link to="/step1">
-              {" "}
               <button className="btn btn-primary">ADD NEW USER</button>
             </Link>
           </div>

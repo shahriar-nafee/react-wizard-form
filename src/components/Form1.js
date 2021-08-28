@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -23,7 +23,6 @@ const Game = () => {
     dispatch(handleForm1Action(name, value));
   };
 
-  console.log(`form1`, form1);
   return (
     <div className="jumbotron">
       <div className="container container-fluid">
